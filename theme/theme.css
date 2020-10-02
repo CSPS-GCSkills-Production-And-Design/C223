@@ -2666,6 +2666,10 @@ span.no-wrap {
         #wb-bar .top-menu > .row #wb-lng ul.text-right > li > a:not(.lang):not(.tb-item) {
           height: 100%; }
 
+#wb-sm .sm.open li a {
+  color: #000;
+  background-color: #ccd793; }
+
 #wb-sm {
   height: 60px; }
   #wb-sm .backnext {
