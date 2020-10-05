@@ -2347,6 +2347,10 @@ details {
 /* **************************************
  * accordions styling
  * *************************************/
+.ProgNote {
+  color: #d4239e;
+  background-color: yellow; }
+
 body {
   font-family: "OpenSans";
   background-color: white; }
