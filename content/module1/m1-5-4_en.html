@@ -20,7 +20,504 @@
         <li>Solicit bids from all businesses across Canada and include IPC measures such as subcontracting to
             beneficiary businesses.</li>
     </ul><hr><p><strong>Impact of modern treaty/CLCA obligations on the sourcing method selection.</strong></p><p>As always, keep applicable modern treaty/CLCA obligations in mind as you select the appropriate sourcing method.
-    </p><p>Flipcard – TBD with graphic designer</p><p>Click on an obligation to learn how it can impact your sourcing method selection.</p><table>
+    </p>
+    <div id="flipcard-display1" class="container-fluid">
+        <div id="flipcard-display1-row" class="row">
+            <div id="flipcard-container">
+                <div class="col-sm-1"></div>
+                    <div class="col-lg-3" ">
+                        <section class="card-container">
+                            <div class="card" onclick="flip()">
+                                <div class="front">
+                                    <div class="icon-section">
+                                        <img class="flipcard-icon" src="./theme/base/flipcard_icon1.ico">
+                                    </div>
+                                    <div id="bottom-text1">
+                                    </div>
+                                    <div id="bottom-text-content1">FRONT TEXT</div>
+                                </div>
+                                <div class="back">ADDITIONAL CONTENT</div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-lg-3" ">
+                        <section class="card-container2">
+                            <div class="card2" onclick="flip2()">
+                                <div class="front2">
+                                    <div class="icon-section2">
+                                        <img class="flipcard-icon2" src="./theme/base/flipcard_icon2.ico">
+                                    </div>
+                                    <div id="bottom-text2">
+                                    </div>
+                                    <div id="bottom-text-content2">FRONT TEXT</div>
+                                </div>
+                                <div class="back2">ADDITIONAL CONTENT</div>
+                            </div>
+                        </section>          
+                    </div>
+                    <div class="col-lg-3" ">
+                        <section class="card-container3">
+                            <div class="card3" onclick="flip3()">
+                                <div class="front3">
+                                    <div class="icon-section3">
+                                        <img class="flipcard-icon3" src="./theme/base/flipcard_icon3.ico">
+                                    </div>
+                                    <div id="bottom-text3">
+                                    </div>
+                                    <div id="bottom-text-content3">FRONT TEXT</div>
+                                </div>
+                                <div class="back3">ADDITIONAL CONTENT</div>
+                            </div>
+                        </section>          
+                    </div>     
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="flipcard-display-ie" class="container-fluid">
+        <div id="flipcard-display1-row" class="row">
+            <div id="flipcard-container">
+                <div class="col-sm-1"></div>
+                    <div class="col-lg-3" ">
+                        <div class="card-container-ie">
+                            <div class="hover-flip">
+                                <div class="cardfront">
+                                    <div class="flipcard-icon-ie1">
+                                        <img src="./theme/base/flipcard_icon1.ico">
+                                    </div>
+                                    <div class="bottom-text-ie">FRONT TEXT</div>
+                                </div>
+                                <div class="cardback">
+                                    back
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="col-lg-3" ">
+                         <div class="card-container-ie">
+                            <div class="hover-flip">
+                                <div class="cardfront">
+                                    <div class="flipcard-icon-ie1">
+                                        <img src="./theme/base/flipcard_icon2.ico">
+                                    </div>
+                                    <div class="bottom-text-ie">FRONT TEXT</div>
+                                </div>
+                                <div class="cardback">
+                                    back
+                                </div>
+                            </div>
+                        </div>                   
+                    </div>
+                    <div class="col-lg-3" ">
+                        <div class="card-container-ie">
+                            <div class="hover-flip">
+                                <div class="cardfront">
+                                    <div class="flipcard-icon-ie1">
+                                        <img src="./theme/base/flipcard_icon3.ico">
+                                    </div>
+                                    <div class="bottom-text-ie">FRONT TEXT</div>
+                                </div>
+                                <div class="cardback">
+                                    back
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>     
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
+    </div>
+
+<!-- -------------------- EXPLORER FLIPCARD ---------------------------------------------------------------------- -->
+
+<style id="explorer-style">
+
+.bottom-text-ie {
+    height: 75px;
+    background-color: #CDD793;
+    margin-top: 40px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.flipcard-icon-ie1 {
+    margin: 30px 10px 20px 60px;
+    width: 130px;
+    height: 120px;
+}
+
+#flipcard-display-ie { 
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card-container-ie {
+    perspective: 1000;
+    transform-style: preserve-3d;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.card-container-ie:hover .cardback {
+    transform: rotateY(0deg);
+}
+
+.card-container-ie:hover .cardfront {
+    transform: rotateY(180deg);
+}
+
+.card-container-ie, .cardfront, .cardback {
+    width: 258px;
+    height: 260px;
+    margin: auto;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.hover-flip {
+    transition: 0.5s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+.cardfront, .cardback {
+    backface-visibility: hidden;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cardfront {
+    z-index: 2;
+    transform: rotateY(0deg);
+    background: #EDF3D7;
+}
+
+.cardback {
+    transform: rotateY(-180deg);
+    background: lightblue;
+}
+</style>
+
+
+</style>
+<!-- -------------------- CHROME FLIPCARD ---------------------------------------------------------------------- -->
+<style>
+#flipcard-display1 { 
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.flipcard-icon {
+    width: 130px;
+    height: 120px;
+    margin-bottom: 40px;
+}
+
+.flipcard-icon2 {
+    width: 130px;
+    height: 120px;
+    margin-bottom: 40px;
+}
+
+.flipcard-icon3 {
+    width: 130px;
+    height: 120px;
+    margin-bottom: 40px;
+}      
+   
+#bottom-text1  {
+    background-color: #CDD793;
+    width: 100%;
+    height: 10px !important;
+    padding: 76px 0 0 0;
+    margin: 184px 0 0 0;
+    border-radius: 0px 0px 15px 15px;
+}
+
+#bottom-text2  {
+    background-color: #CDD793;
+    width: 100%;
+    height: 10px !important;
+    padding: 76px 0 0 0;
+    margin: 184px 0 0 0;
+    border-radius: 0px 0px 15px 15px;
+}
+
+#bottom-text3  {
+    background-color: #CDD793;
+    width: 100%;
+    height: 10px !important;
+    padding: 76px 0 0 0;
+    margin: 184px 0 0 0;
+    border-radius: 0px 0px 15px 15px;
+}
+   
+#bottom-text-content1  {
+    width: 100%;
+    height: 10px !important;
+    padding: 30px 0 0 0;
+    margin: 184px 0 0 0;
+    font-size: 10px;
+}
+
+#bottom-text-content2  {
+    width: 100%;
+    height: 10px !important;
+    padding: 30px 0 0 0;
+    margin: 184px 0 0 0;
+    font-size: 10px;
+}
+
+#bottom-text-content3  {
+    width: 100%;
+    height: 10px !important;
+    padding: 30px 0 0 0;
+    margin: 184px 0 0 0;
+    font-size: 10px;
+}
+   
+   
+.card-container {
+    width: 258px;
+    height: 260px;
+    margin: auto;
+    -webkit-perspective: 700px;
+    -moz-perspective: 700px;
+    -o-perspective: 700px;
+    perspective: 700px;
+}
+
+.card-container2 {
+    width: 258px;
+    height: 260px;
+    margin: auto;
+    -webkit-perspective: 700px;
+    -moz-perspective: 700px;
+    -o-perspective: 700px;
+    perspective: 700px;
+}
+
+.card-container3 {
+    width: 258px;
+    height: 260px;
+    margin: auto;
+    -webkit-perspective: 700px;
+    -moz-perspective: 700px;
+    -o-perspective: 700px;
+    perspective: 700px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    -o-transition: -o-transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
+}
+
+.card2 {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    -o-transition: -o-transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
+}
+
+.card3 {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    -o-transition: -o-transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
+}       
+    
+.card .front {
+    background: #EDF3D7;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.card2 .front2 {
+    background: #EDF3D7;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.card3 .front3 {
+    background: #EDF3D7;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.card .back {
+    background: lightblue;
+    font-size: 16px;
+    padding: 20px 0 20px 0;
+    border-radius: 15px 15px 15px 15px;
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+.card2 .back2 {
+    background: lightblue;
+    font-size: 16px;
+    padding: 20px 0 20px 0;
+    border-radius: 15px 15px 15px 15px;
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+    
+.card3 .back3 {
+    background: lightblue;
+    font-size: 16px;
+    padding: 20px 0 20px 0;
+    border-radius: 15px 15px 15px 15px;
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+.card div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 140px;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card2 div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 140px;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card3 div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 140px;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card.turnover {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+    -webkit-backface-visibility: show;
+    -moz-backface-visibility: show;
+    -o-backface-visibility: show;
+    backface-visibility: show;
+}
+
+.card2.turnover2 {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+.card3.turnover3 {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+</style>  
+           
+<script>
+function flip() {
+    $('.card').toggleClass('turnover');
+} 
+
+function flip2() {
+    $('.card2').toggleClass('turnover2');
+} 
+
+function flip3() {
+    $('.card3').toggleClass('turnover3');
+}
+
+if (navigator.userAgent.match(/Trident\/7\./)) {
+  var display = document.getElementById("flipcard-display1");
+  display.parentNode.removeChild(display);
+}
+
+var isChromium = window.chrome;
+var winNav = window.navigator;
+var vendorName = winNav.vendor;
+var isOpera = typeof window.opr !== "undefined";
+var isIEedge = winNav.userAgent.indexOf("Edge") > -1;
+var isIOSChrome = winNav.userAgent.match("CriOS");
+
+if (isIOSChrome) {
+     var display = document.getElementById("flipcard-display-ie");
+     var explorer = document.getElementById("explorer-style");
+     display.parentNode.removeChild(display);
+     explorer.parentNode.removeChild(explorer);
+} else if(
+  isChromium !== null &&
+  typeof isChromium !== "undefined" &&
+  vendorName === "Google Inc." &&
+  isOpera === false &&
+  isIEedge === false
+) {
+     var display = document.getElementById("flipcard-display-ie");
+     var explorer = document.getElementById("explorer-style");
+     display.parentNode.removeChild(display);
+     explorer.parentNode.removeChild(explorer);
+} else { 
+
+}
+
+</script>    
+    <table>
         <tbody>
             <tr>
                 <td width="208">

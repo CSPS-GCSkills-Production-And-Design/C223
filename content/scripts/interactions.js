@@ -1,3 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+
 //DO NOT MODIFY ↓
 define([
     'jquery'
@@ -75,7 +86,400 @@ define([
 			.removeClass("ico-QS-right")
 			.removeClass("ico-QS-left")
 			.removeClass("snap-sm");
+		
+		/* ACTIVITY ---------------------------------------------------------------------- */
 
+		/* HIGHLIGHTS ON SELECTION (Applies to all Qs) ----------------------------------- */
+
+		/* VARIABLES */
+
+		var SELECT1 = document.getElementById("q1-a");
+		var SELECT2 = document.getElementById("q1-b");
+		var SELECT1_Q2 = document.getElementById("q2-a");
+		var SELECT2_Q2 = document.getElementById("q2-b");
+		var SELECT1_Q3 = document.getElementById("q3-a");
+		var SELECT2_Q3 = document.getElementById("q3-b");
+		var SELECT1_Q5 = document.getElementById("q5-a");
+		var SELECT2_Q5 = document.getElementById("q5-b");
+		/* var SELECT3 = document.getElementById("q1-c"); */
+
+		var HIGHLIGHT1 = document.getElementsByClassName("q1-option1")[0];
+		var HIGHLIGHT2 = document.getElementsByClassName("q1-option2")[0];
+		var HIGHLIGHT1_Q2 = document.getElementsByClassName("q2-option1")[0];
+		var HIGHLIGHT2_Q2 = document.getElementsByClassName("q2-option2")[0];
+		var HIGHLIGHT1_Q3 = document.getElementsByClassName("q3-option1")[0];
+		var HIGHLIGHT2_Q3 = document.getElementsByClassName("q3-option2")[0];
+		var HIGHLIGHT1_Q5 = document.getElementsByClassName("q5-option1")[0];
+		var HIGHLIGHT2_Q5 = document.getElementsByClassName("q5-option2")[0];
+		/* var HIGHLIGHT3 = document.getElementsByClassName("q1-option3")[0]; */
+
+		/* Applies to Q1 */	
+
+		/* HIGHLIGHT ON OPTION 1 */
+
+		function SelectionHighlight1(color) {
+		HIGHLIGHT1.style.backgroundColor = color;
+		}
+
+		function RemoveHighlightColor1(color) {
+		var highlight = document.getElementsByClassName("q1-option2")[0];
+		/* var highlight2 = document.getElementsByClassName("q1-option3")[0]; */
+		highlight.removeAttribute("style");        
+		}
+
+		SELECT1.onclick = function() { 
+			SelectionHighlight1("#d0e6e6");
+			RemoveHighlightColor1();
+			}    
+
+		/* HIGHLIGHT ON OPTION 2 */
+
+		function SelectionHighlight2(color) {
+		HIGHLIGHT2.style.backgroundColor = color;
+		}
+
+		function RemoveHighlightColor2(color) {
+		var highlight = document.getElementsByClassName("q1-option1")[0];
+		/* var highlight2 = document.getElementsByClassName("q1-option3")[0]; */
+		highlight.removeAttribute("style");   
+		}
+
+		SELECT2.onclick = function() { 
+			SelectionHighlight2("#d0e6e6");
+			RemoveHighlightColor2();
+			}
+
+		/* HIGHLIGHT OPTION 3 ------------------------------------- */
+
+		/* function SelectionHighlight3(color) {
+		HIGHLIGHT3.style.backgroundColor = color;
+		}
+
+		function RemoveHighlightColor3(color) {
+		var highlight = document.getElementsByClassName("activity-option1")[0];
+		var highlight2 = document.getElementsByClassName("activity-option2")[0];    
+		highlight.removeAttribute("style");    
+		highlight2.removeAttribute("style");    
+		}
+
+		SELECT3.onclick = function() { 
+			SelectionHighlight3("#d0e6e6");
+			RemoveHighlightColor3();
+			} /* THIRD OPTION DISABLED
+
+		/* Applies to Q2 */	
+
+		/* HIGHLIGHT ON OPTION 1 */
+
+		function SelectionHighlight1_Q2(color) {
+		HIGHLIGHT1_Q2.style.backgroundColor = color;
+		}
+
+		function RemoveHighlightColor1_Q2(color) {
+		var highlight = document.getElementsByClassName("q2-option2")[0];
+		/* var highlight2 = document.getElementsByClassName("q1-option3")[0]; */
+		highlight.removeAttribute("style");        
+		}
+
+		SELECT1_Q2.onclick = function() { 
+			SelectionHighlight1_Q2("#d0e6e6");
+			RemoveHighlightColor1_Q2();
+			}    
+
+		/* HIGHLIGHT ON OPTION 2 */
+
+		function SelectionHighlight2_Q2(color) {
+		HIGHLIGHT2_Q2.style.backgroundColor = color;
+		}
+
+		function RemoveHighlightColor2_Q2(color) {
+		var highlight = document.getElementsByClassName("q2-option1")[0];
+		/* var highlight2 = document.getElementsByClassName("q1-option3")[0]; */
+		highlight.removeAttribute("style");
+		HIGHLIGHT1_Q2.removeAttribute("style");   
+		}
+
+		SELECT2_Q2.onclick = function() { 
+			SelectionHighlight2_Q2("#d0e6e6");
+			RemoveHighlightColor2_Q2();
+			}
+
+		/* Applies to Q3 */ 
+
+		/* HIGHLIGHT ON OPTION 1 */
+
+		function SelectionHighlight1_Q3(color) {
+		HIGHLIGHT1_Q3.style.backgroundColor = color;
+		}
+
+		function RemoveHighlightColor1_Q3(color) {
+		var highlight = document.getElementsByClassName("q3-option2")[0];
+		/* var highlight2 = document.getElementsByClassName("q1-option3")[0]; */
+		highlight.removeAttribute("style");       
+		}
+
+		SELECT1_Q3.onclick = function() { 
+			SelectionHighlight1_Q3("#d0e6e6");
+			RemoveHighlightColor1_Q3();
+			}    
+
+		/* HIGHLIGHT ON OPTION 2 */
+
+		function SelectionHighlight2_Q3(color) {
+		HIGHLIGHT2_Q3.style.backgroundColor = color;
+		}
+
+		function RemoveHighlightColor2_Q3(color) {
+		var highlight = document.getElementsByClassName("q3-option1")[0];
+		/* var highlight2 = document.getElementsByClassName("q1-option3")[0]; */
+		highlight.removeAttribute("style");
+		HIGHLIGHT1_Q3.removeAttribute("style");   
+		}
+
+		SELECT2_Q3.onclick = function() { 
+			SelectionHighlight2_Q3("#d0e6e6");
+			RemoveHighlightColor2_Q3();
+			}
+
+		/* Applies to Q5 */ 
+
+		/* HIGHLIGHT ON OPTION 1 */
+
+		function SelectionHighlight1_Q5(color) {
+		HIGHLIGHT1_Q5.style.backgroundColor = color;
+		}
+
+		function RemoveHighlightColor1_Q5(color) {
+		var highlight = document.getElementsByClassName("q5-option2")[0];
+		/* var highlight2 = document.getElementsByClassName("q1-option3")[0]; */
+		highlight.removeAttribute("style");       
+		}
+
+		SELECT1_Q5.onclick = function() { 
+			SelectionHighlight1_Q5("#d0e6e6");
+			RemoveHighlightColor1_Q5();
+			}    
+
+		/* HIGHLIGHT ON OPTION 2 */
+
+		function SelectionHighlight2_Q5(color) {
+		HIGHLIGHT2_Q5.style.backgroundColor = color;
+		}
+
+		function RemoveHighlightColor2_Q5(color) {
+		var highlight = document.getElementsByClassName("q5-option1")[0];
+		/* var highlight2 = document.getElementsByClassName("q1-option3")[0]; */
+		highlight.removeAttribute("style");
+		HIGHLIGHT1_Q5.removeAttribute("style");   
+		}
+
+		SELECT2_Q5.onclick = function() { 
+			SelectionHighlight2_Q5("#d0e6e6");
+			RemoveHighlightColor2_Q5();
+			}
+
+		/* SUBMIT BUTTON DISPLAY ------------------------------------- */
+
+		/* Applies to Q1 */
+
+		$(document).ready(function(){
+			$("#display1").click(function(){
+				if (($('#q1-a').is(':checked')) || ($('#q1-b').is(':checked')) /* || ($('#q1-a').is(':checked')) THIRD OPTION DISABLED*/) {
+					$("#display1").hide();
+				}
+				else {
+					$("#display1").show();	
+				}
+			});
+		});
+
+		/* Applies to Q2 */
+
+		$(document).ready(function(){
+			$("#display2").click(function(){
+				if (($('#q2-a').is(':checked')) || ($('#q2-b').is(':checked')) /* || ($('#q1-a').is(':checked')) THIRD OPTION DISABLED*/) {
+					$("#display2").hide();
+				}
+				else {
+					$("#display2").show();	
+				}
+			});
+		});
+
+		/* Applies to Q3 */
+
+		$(document).ready(function(){
+			$("#display3").click(function(){
+				if (($('#q3-a').is(':checked')) || ($('#q3-b').is(':checked')) /* || ($('#q1-a').is(':checked')) THIRD OPTION DISABLED*/) {
+					$("#display3").hide();
+				}
+				else {
+					$("#display3").show();  
+				}
+			});
+		});
+
+		/* Applies to Q4 */
+
+		$(document).ready(function(){
+			$("#display4").click(function(){
+				if( $("#q4-input").val().length === 0 ) {
+					$("#display4").show();
+				}
+				else {
+					$("#display4").hide();  
+				}
+			});
+		});
+
+		/* Applies to Q5 */
+
+		$(document).ready(function(){
+			$("#display5").click(function(){
+				if (($('#q5-a').is(':checked')) || ($('#q5-b').is(':checked')) /* || ($('#q1-a').is(':checked')) THIRD OPTION DISABLED*/) {
+					$("#display5").hide();
+				}
+				else {
+					$("#display5").show();  
+				}
+			});
+		});
+
+		/* Applies to Q6 */
+
+		$(document).ready(function(){
+			$("#display6").click(function(){
+				if( $("#q6-input").val().length === 0 ) {
+					$("#display6").show();
+				}
+				else {
+					$("#display6").hide();  
+				}
+			});
+		});
+
+		/* FEEDBACK CORRECTION HIGHLIGHT ----------------------------- */
+
+		/* Applies to Q1 */
+
+		$(document).ready(function(){
+			$("#display1").click(function(){
+				if ($('#q1-a').is(':checked')) {
+					$(".q1-option1").css("background-color", "#CCD793");
+				}
+				else {
+				}
+			});
+		});
+
+		$(document).ready(function(){
+			$("#display1").click(function(){
+				if ($('#q1-b').is(':checked')) {
+					$(".q1-option2").css("background-color", "#F97B7B");
+				}
+				else {
+				}
+			});
+		});
+
+		/* Applies to Q2 */
+
+		$(document).ready(function(){
+			$("#display2").click(function(){
+				if ($('#q2-a').is(':checked')) {
+					$(".q2-option1").css("background-color", "#F97B7B");
+				}
+				else {
+				}
+			});
+		});
+
+		$(document).ready(function(){
+			$("#display2").click(function(){
+				if ($('#q2-b').is(':checked')) {
+					$(".q2-option2").css("background-color", "#CCD793");
+				}
+				else {
+				}
+			});
+		});
+
+		/* Applies to Q3 */
+
+		$(document).ready(function(){
+			$("#display3").click(function(){
+				if ($('#q3-a').is(':checked')) {
+					$(".q3-option1").css("background-color", "#F97B7B");
+				}
+				else {
+				}
+			});
+		});
+
+		$(document).ready(function(){
+			$("#display3").click(function(){
+				if ($('#q3-b').is(':checked')) {
+					$(".q3-option2").css("background-color", "#CCD793");
+				}
+				else {
+				}
+			});
+		});
+
+		/* Applies to Q4 */
+
+		$(document).ready(function(){
+			$("#display4").click(function(){
+				if ($("#q4-input").val().indexOf('nunavut land claims agreement') >= 0) {
+					$("#q4-input").css("border-color", "#CCD793");
+					$("#q4-input").css("border-width", "4px");
+				}
+				else {
+					$("#q4-input").css("border-color", "#F97B7B");
+					$("#q4-input").css("border-width", "4px");
+				}
+			});
+		});
+
+		/* Applies to Q5 */
+
+		$(document).ready(function(){
+			$("#display5").click(function(){
+				if ($('#q5-b').is(':checked')) {
+					$(".q5-option2").css("background-color", "#F97B7B");
+				}
+				else {
+				}
+			});
+		});
+
+		$(document).ready(function(){
+			$("#display5").click(function(){
+				if ($('#q5-a').is(':checked')) {
+					$(".q5-option1").css("background-color", "#CCD793");
+				}
+				else {
+				}
+			});
+		});
+
+		/* Applies to Q6 */
+
+		$(document).ready(function(){
+			$("#display6").click(function(){
+				if ($("#q6-input").val().indexOf("Gwich'in Comprehensive Land Claim Agreement and Inuvialuit Final Agreement/Western Arctic Claim") >= 0) {
+					$("#q6-input").css("border-color", "#CCD793");
+					$("#q6-input").css("border-width", "4px");
+				}
+				else {
+					$("#q6-input").css("border-color", "#F97B7B");
+					$("#q6-input").css("border-width", "6px");
+				}
+			});
+		});
+
+		/* ACTIVITY END --------------------------------------------------------------- */
+		
 	}
 
 
@@ -269,3 +673,4 @@ define([
 	initialize();
 
 });
+
