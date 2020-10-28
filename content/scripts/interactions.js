@@ -87,196 +87,357 @@ define([
 			.removeClass("ico-QS-left")
 			.removeClass("snap-sm");
 		
-		/* ACTIVITY ---------------------------------------------------------------------- */
+		/* ACTIVITY 1.1. ---------------------------------------------------------------*/
+		
+		/* SUBMIT BUTTON DISPLAY ------------------------------------- */
 
-		/* HIGHLIGHTS ON SELECTION (Applies to all Qs) ----------------------------------- */
+		$(document).ready(function(){
+		    $("#display-1-11").click(function(){
+		        if (($('#q1-a-11').is(':checked')) || ($('#q1-b-11').is(':checked')) || ($('#q1-c-11').is(':checked')) || ($('#q1-d-11').is(':checked')) || ($('#q1-e-11').is(':checked')) || ($('#q1-f-11').is(':checked')) || ($('#q1-g-11').is(':checked'))) {
+		            $("#display-1-11").hide();
+		        }
+		        else {
+		            $("#display-1-11").show();  
+		        }
+		    });
+		});
 
-		/* VARIABLES */
+		/* FEEDBACK DISPLAY ------------------------------------------ */
 
-		var SELECT1 = document.getElementById("q1-a");
-		var SELECT2 = document.getElementById("q1-b");
-		var SELECT1_Q2 = document.getElementById("q2-a");
-		var SELECT2_Q2 = document.getElementById("q2-b");
-		var SELECT1_Q3 = document.getElementById("q3-a");
-		var SELECT2_Q3 = document.getElementById("q3-b");
-		var SELECT1_Q5 = document.getElementById("q5-a");
-		var SELECT2_Q5 = document.getElementById("q5-b");
-		/* var SELECT3 = document.getElementById("q1-c"); */
+		$(document).ready(function(){
+		    $("#display-1-11").click(function(){
+		        if (($('#q1-a-11').is(':checked'))) {
+		            $("#feedback1-11").show();
+		            $("#no-selection-11").hide();            
+		            $('#q1-a-label-11').removeAttr('onChange');
+		            $('#q1-b-label-11').removeAttr('onChange');
+		            $('#q1-c-label-11').removeAttr('onChange');
+		            $('#q1-d-label-11').removeAttr('onChange');
+		            $('#q1-e-label-11').removeAttr('onChange');
+		            $('#q1-f-label-11').removeAttr('onChange');
+		            $('#q1-g-label-11').removeAttr('onChange');
+		            $("#q1-b-11").attr("disabled", true);                      
+		            $("#q1-a-11").attr("disabled", true);                      
+		            $("#q1-c-11").attr("disabled", true);                      
+		            $("#q1-d-11").attr("disabled", true);                      
+		            $("#q1-e-11").attr("disabled", true);                      
+		            $("#q1-f-11").attr("disabled", true);                      
+		            $("#q1-g-11").attr("disabled", true);                      
+		        }
+		        else if (($('#q1-b-11').is(':checked')) || ($('#q1-c-11').is(':checked')) || ($('#q1-d-11').is(':checked')) || ($('#q1-e-11').is(':checked')) || ($('#q1-f-11').is(':checked')) || ($('#q1-g-11').is(':checked'))) {
+		            $("#feedback2-11").show();  
+		            $("#no-selection-11").hide();            
+		            $('#q1-a-label-11').removeAttr('onChange');
+		            $('#q1-b-label-11').removeAttr('onChange');
+		            $('#q1-c-label-11').removeAttr('onChange');
+		            $('#q1-d-label-11').removeAttr('onChange');
+		            $('#q1-e-label-11').removeAttr('onChange');
+		            $('#q1-f-label-11').removeAttr('onChange');
+		            $('#q1-g-label-11').removeAttr('onChange');
+		            $("#q1-b-11").attr("disabled", true);                      
+		            $("#q1-a-11").attr("disabled", true);                      
+		            $("#q1-c-11").attr("disabled", true);                      
+		            $("#q1-d-11").attr("disabled", true);                      
+		            $("#q1-e-11").attr("disabled", true);                      
+		            $("#q1-f-11").attr("disabled", true);                      
+		            $("#q1-g-11").attr("disabled", true);                    
+		        }
+		        else if ((!$('#q1-b-11').is(':checked')) || (!$('#q1-c-11').is(':checked')) || (!$('#q1-d-11').is(':checked')) || (!$('#q1-e-11').is(':checked')) || (!$('#q1-f-11').is(':checked')) || (!$('#q1-g-11').is(':checked'))) {
+		            $("#no-selection-11").show();   
+		        }
+		    });
+		});
 
-		var HIGHLIGHT1 = document.getElementsByClassName("q1-option1")[0];
-		var HIGHLIGHT2 = document.getElementsByClassName("q1-option2")[0];
-		var HIGHLIGHT1_Q2 = document.getElementsByClassName("q2-option1")[0];
-		var HIGHLIGHT2_Q2 = document.getElementsByClassName("q2-option2")[0];
-		var HIGHLIGHT1_Q3 = document.getElementsByClassName("q3-option1")[0];
-		var HIGHLIGHT2_Q3 = document.getElementsByClassName("q3-option2")[0];
-		var HIGHLIGHT1_Q5 = document.getElementsByClassName("q5-option1")[0];
-		var HIGHLIGHT2_Q5 = document.getElementsByClassName("q5-option2")[0];
-		/* var HIGHLIGHT3 = document.getElementsByClassName("q1-option3")[0]; */
+        /* VISUAL 2.4. -------------------------------------------------------------------------- */
 
-		/* Applies to Q1 */	
+        /* Script is inline. See file m1-3_em.html under content\module1 for js */
 
-		/* HIGHLIGHT ON OPTION 1 */
+		/* ACTIVITY 5.2.2. ---------------------------------------------------------------------- */
 
-		function SelectionHighlight1(color) {
-		HIGHLIGHT1.style.backgroundColor = color;
-		}
+		/* SUBMIT BUTTON DISPLAY ------------------------------------- */
 
-		function RemoveHighlightColor1(color) {
-		var highlight = document.getElementsByClassName("q1-option2")[0];
-		/* var highlight2 = document.getElementsByClassName("q1-option3")[0]; */
-		highlight.removeAttribute("style");        
-		}
+		/* Applies to Q1 */
 
-		SELECT1.onclick = function() { 
-			SelectionHighlight1("#d0e6e6");
-			RemoveHighlightColor1();
-			}    
+		$(document).ready(function(){
+		    $("#display-1-252").click(function(){
+		        if (($('#q1-a-252').is(':checked')) || ($('#q1-b-252').is(':checked'))) {
+		            $("#display-1-252").hide();
+		        }
+		        else {
+		            $("#display-1-252").show();  
+		        }
+		    });
+		});
 
-		/* HIGHLIGHT ON OPTION 2 */
+		/* Applies to Q2 */
 
-		function SelectionHighlight2(color) {
-		HIGHLIGHT2.style.backgroundColor = color;
-		}
+		$(document).ready(function(){
+		    $("#display-2-252").click(function(){
+		        if (($('#q2-a-252').is(':checked')) || ($('#q2-b-252').is(':checked'))) {
+		            $("#display-2-252").hide();
+		        }
+		        else {
+		            $("#display-2-252").show();  
+		        }
+		    });
+		});
 
-		function RemoveHighlightColor2(color) {
-		var highlight = document.getElementsByClassName("q1-option1")[0];
-		/* var highlight2 = document.getElementsByClassName("q1-option3")[0]; */
-		highlight.removeAttribute("style");   
-		}
+		/* Applies to Q3 */
 
-		SELECT2.onclick = function() { 
-			SelectionHighlight2("#d0e6e6");
-			RemoveHighlightColor2();
-			}
+		$(document).ready(function(){
+		    $("#display-3-252").click(function(){
+		        if (($('#q3-a-252').is(':checked')) || ($('#q3-b-252').is(':checked'))) {
+		            $("#display-3-252").hide();
+		        }
+		        else {
+		            $("#display-3-252").show();  
+		        }
+		    });
+		});
 
-		/* HIGHLIGHT OPTION 3 ------------------------------------- */
+		/* Applies to Q4 */
 
-		/* function SelectionHighlight3(color) {
-		HIGHLIGHT3.style.backgroundColor = color;
-		}
+		$(document).ready(function(){
+		    $("#display-4-252").click(function(){
+		        if (($('#q4-a-252').is(':checked')) || ($('#q4-b-252').is(':checked'))) {
+		            $("#display-4-252").hide();
+		        }
+		        else {
+		            $("#display-4-252").show();  
+		        }
+		    });
+		});
 
-		function RemoveHighlightColor3(color) {
-		var highlight = document.getElementsByClassName("activity-option1")[0];
-		var highlight2 = document.getElementsByClassName("activity-option2")[0];    
-		highlight.removeAttribute("style");    
-		highlight2.removeAttribute("style");    
-		}
 
-		SELECT3.onclick = function() { 
-			SelectionHighlight3("#d0e6e6");
-			RemoveHighlightColor3();
-			} /* THIRD OPTION DISABLED
+		/* FEEDBACK DISPLAY ------------------------------------------ */
 
-		/* Applies to Q2 */	
+		/* Applies to Q1 */
 
-		/* HIGHLIGHT ON OPTION 1 */
+		$(document).ready(function(){
+		    $("#display-1-252").click(function(){
+		        if (($('#q1-a-252').is(':checked'))) {
+		            $("#feedback-1-252").show();
+		            $('#q1-a-label-252').removeAttr('onclick');
+		            $('#q1-b-label-252').removeAttr('onclick');
+		            $('#q1-b-252').removeAttr('onclick');
+		            $('#q1-a-252').removeAttr('onclick');
+		            $("#q1-b-252").attr("disabled", true);                      
+		            $("#q1-a-252").attr("disabled", true);                      
+		        }
+		        else {  
+		        }
+		    });
+		});
 
-		function SelectionHighlight1_Q2(color) {
-		HIGHLIGHT1_Q2.style.backgroundColor = color;
-		}
+		$(document).ready(function(){
+		    $("#display-1-252").click(function(){
+		        if (($('#q1-b-252').is(':checked'))) {
+		            $("#feedback-2-252").show();
+		            $('#q1-a-label-252').removeAttr('onclick');
+		            $('#q1-b-label-252').removeAttr('onclick');
+		            $('#q1-b-252').removeAttr('onclick');
+		            $('#q1-a-252').removeAttr('onclick');
+		            $("#q1-b-252").attr("disabled", true);                      
+		            $("#q1-a-252").attr("disabled", true); 
+		        }
+		        else { 
+		        }
+		    });
+		});
 
-		function RemoveHighlightColor1_Q2(color) {
-		var highlight = document.getElementsByClassName("q2-option2")[0];
-		/* var highlight2 = document.getElementsByClassName("q1-option3")[0]; */
-		highlight.removeAttribute("style");        
-		}
+		/* Applies to Q2 */
 
-		SELECT1_Q2.onclick = function() { 
-			SelectionHighlight1_Q2("#d0e6e6");
-			RemoveHighlightColor1_Q2();
-			}    
+		$(document).ready(function(){
+		    $("#display-2-252").click(function(){
+		        if (($('#q2-a-252').is(':checked'))) {
+		            $("#feedback2-1-252").show();
+		            $('#q2-a-label-252').removeAttr('onclick');
+		            $('#q2-b-label-252').removeAttr('onclick');
+		            $('#q2-b-252').removeAttr('onclick');
+		            $('#q2-a-252').removeAttr('onclick');
+		            $("#q2-b-252").attr("disabled", true);                      
+		            $("#q2-a-252").attr("disabled", true);                      
+		        }
+		        else {  
+		        }
+		    });
+		});
 
-		/* HIGHLIGHT ON OPTION 2 */
+		$(document).ready(function(){
+		    $("#display-2-252").click(function(){
+		        if (($('#q2-b-252').is(':checked'))) {
+		            $("#feedback2-2-252").show();
+		            $('#q2-a-label-252').removeAttr('onclick');
+		            $('#q2-b-label-252').removeAttr('onclick');
+		            $('#q2-b-252').removeAttr('onclick');
+		            $('#q2-a-252').removeAttr('onclick');
+		            $("#q2-b-252").attr("disabled", true);                      
+		            $("#q2-a-252").attr("disabled", true); 
+		        }
+		        else { 
+		        }
+		    });
+		});
 
-		function SelectionHighlight2_Q2(color) {
-		HIGHLIGHT2_Q2.style.backgroundColor = color;
-		}
+		/* Applies to Q3 */
 
-		function RemoveHighlightColor2_Q2(color) {
-		var highlight = document.getElementsByClassName("q2-option1")[0];
-		/* var highlight2 = document.getElementsByClassName("q1-option3")[0]; */
-		highlight.removeAttribute("style");
-		HIGHLIGHT1_Q2.removeAttribute("style");   
-		}
+		$(document).ready(function(){
+		    $("#display-3-252").click(function(){
+		        if (($('#q3-a-252').is(':checked'))) {
+		            $("#feedback3-1-252").show();
+		            $('#q3-a-label-252').removeAttr('onclick');
+		            $('#q3-b-label-252').removeAttr('onclick');
+		            $('#q3-b-252').removeAttr('onclick');
+		            $('#q3-a-252').removeAttr('onclick');
+		            $("#q3-b-252").attr("disabled", true);                      
+		            $("#q3-a-252").attr("disabled", true);                      
+		        }
+		        else {  
+		        }
+		    });
+		});
 
-		SELECT2_Q2.onclick = function() { 
-			SelectionHighlight2_Q2("#d0e6e6");
-			RemoveHighlightColor2_Q2();
-			}
+		$(document).ready(function(){
+		    $("#display-3-252").click(function(){
+		        if (($('#q3-b-252').is(':checked'))) {
+		            $("#feedback3-2-252").show();
+		            $('#q3-a-label-252').removeAttr('onclick');
+		            $('#q3-b-label-252').removeAttr('onclick');
+		            $('#q3-b-252').removeAttr('onclick');
+		            $('#q3-a-252').removeAttr('onclick');
+		            $("#q3-b-252").attr("disabled", true);                      
+		            $("#q3-a-252").attr("disabled", true); 
+		        }
+		        else { 
+		        }
+		    });
+		});
 
-		/* Applies to Q3 */ 
+		/* Applies to Q4 */
 
-		/* HIGHLIGHT ON OPTION 1 */
+		$(document).ready(function(){
+		    $("#display-4-252").click(function(){
+		        if (($('#q4-b-252').is(':checked'))) {
+		            $("#feedback4-1-252").show();
+		            $('#q4-a-label-252').removeAttr('onclick');
+		            $('#q4-b-label-252').removeAttr('onclick');
+		            $('#q4-b-252').removeAttr('onclick');
+		            $('#q4-a-252').removeAttr('onclick');
+		            $("#q4-b-252").attr("disabled", true);                      
+		            $("#q4-a-252").attr("disabled", true);                      
+		        }
+		        else {  
+		        }
+		    });
+		});
 
-		function SelectionHighlight1_Q3(color) {
-		HIGHLIGHT1_Q3.style.backgroundColor = color;
-		}
+		$(document).ready(function(){
+		    $("#display-4-252").click(function(){
+		        if (($('#q4-a-252').is(':checked'))) {
+		            $("#feedback4-2-252").show();
+		            $('#q4-a-label-252').removeAttr('onclick');
+		            $('#q4-b-label-252').removeAttr('onclick');
+		            $('#q4-b-252').removeAttr('onclick');
+		            $('#q4-a-252').removeAttr('onclick');
+		            $("#q4-b-252").attr("disabled", true);                      
+		            $("#q4-a-252").attr("disabled", true); 
+		        }
+		        else { 
+		        }
+		    });
+		});
 
-		function RemoveHighlightColor1_Q3(color) {
-		var highlight = document.getElementsByClassName("q3-option2")[0];
-		/* var highlight2 = document.getElementsByClassName("q1-option3")[0]; */
-		highlight.removeAttribute("style");       
-		}
+		/* FEEDBACK CORRECTION HIGHLIGHT ---------------------------- */
 
-		SELECT1_Q3.onclick = function() { 
-			SelectionHighlight1_Q3("#d0e6e6");
-			RemoveHighlightColor1_Q3();
-			}    
+		/* Applies to Q1 */
 
-		/* HIGHLIGHT ON OPTION 2 */
+		$(document).ready(function(){
+		    $("#display-1-252").click(function(){
+		        if ($('#q1-a-252').is(':checked')) {
+		            $(".q1-option1-252").css("background-color", "#CCD793");
+		        }
+		        else {
+		        }
+		    });
+		});
 
-		function SelectionHighlight2_Q3(color) {
-		HIGHLIGHT2_Q3.style.backgroundColor = color;
-		}
+		$(document).ready(function(){
+		    $("#display-1-252").click(function(){
+		        if ($('#q1-b-252').is(':checked')) {
+		            $(".q1-option2-252").css("background-color", "#F97B7B");
+		        }
+		        else {
+		        }
+		    });
+		});
 
-		function RemoveHighlightColor2_Q3(color) {
-		var highlight = document.getElementsByClassName("q3-option1")[0];
-		/* var highlight2 = document.getElementsByClassName("q1-option3")[0]; */
-		highlight.removeAttribute("style");
-		HIGHLIGHT1_Q3.removeAttribute("style");   
-		}
+		/* Applies to Q2 */
 
-		SELECT2_Q3.onclick = function() { 
-			SelectionHighlight2_Q3("#d0e6e6");
-			RemoveHighlightColor2_Q3();
-			}
+		$(document).ready(function(){
+		    $("#display-2-252").click(function(){
+		        if ($('#q2-a-252').is(':checked')) {
+		            $(".q2-option1-252").css("background-color", "#CCD793");
+		        }
+		        else {
+		        }
+		    });
+		});
 
-		/* Applies to Q5 */ 
+		$(document).ready(function(){
+		    $("#display-2-252").click(function(){
+		        if ($('#q2-b-252').is(':checked')) {
+		            $(".q2-option2-252").css("background-color", "#F97B7B");
+		        }
+		        else {
+		        }
+		    });
+		});
 
-		/* HIGHLIGHT ON OPTION 1 */
+		/* Applies to Q3 */
 
-		function SelectionHighlight1_Q5(color) {
-		HIGHLIGHT1_Q5.style.backgroundColor = color;
-		}
+		$(document).ready(function(){
+		    $("#display-3-252").click(function(){
+		        if ($('#q3-a-252').is(':checked')) {
+		            $(".q3-option1-252").css("background-color", "#CCD793");
+		        }
+		        else {
+		        }
+		    });
+		});
 
-		function RemoveHighlightColor1_Q5(color) {
-		var highlight = document.getElementsByClassName("q5-option2")[0];
-		/* var highlight2 = document.getElementsByClassName("q1-option3")[0]; */
-		highlight.removeAttribute("style");       
-		}
+		$(document).ready(function(){
+		    $("#display-3-252").click(function(){
+		        if ($('#q3-b-252').is(':checked')) {
+		            $(".q3-option2-252").css("background-color", "#F97B7B");
+		        }
+		        else {
+		        }
+		    });
+		});
 
-		SELECT1_Q5.onclick = function() { 
-			SelectionHighlight1_Q5("#d0e6e6");
-			RemoveHighlightColor1_Q5();
-			}    
+		/* Applies to Q4 */
 
-		/* HIGHLIGHT ON OPTION 2 */
+		$(document).ready(function(){
+		    $("#display-4-252").click(function(){
+		        if ($('#q4-b-252').is(':checked')) {
+		            $(".q4-option2-252").css("background-color", "#CCD793");
+		        }
+		        else {
+		        }
+		    });
+		});
 
-		function SelectionHighlight2_Q5(color) {
-		HIGHLIGHT2_Q5.style.backgroundColor = color;
-		}
+		$(document).ready(function(){
+		    $("#display-4-252").click(function(){
+		        if ($('#q4-a-252').is(':checked')) {
+		            $(".q4-option1-252").css("background-color", "#F97B7B");
+		        }
+		        else {
+		        }
+		    });
+		});
 
-		function RemoveHighlightColor2_Q5(color) {
-		var highlight = document.getElementsByClassName("q5-option1")[0];
-		/* var highlight2 = document.getElementsByClassName("q1-option3")[0]; */
-		highlight.removeAttribute("style");
-		HIGHLIGHT1_Q5.removeAttribute("style");   
-		}
-
-		SELECT2_Q5.onclick = function() { 
-			SelectionHighlight2_Q5("#d0e6e6");
-			RemoveHighlightColor2_Q5();
-			}
+		/* ACTIVITY 5.2.2.2. ---------------------------------------------------------------*/
 
 		/* SUBMIT BUTTON DISPLAY ------------------------------------- */
 
@@ -479,7 +640,6 @@ define([
 		});
 
 		/* ACTIVITY END --------------------------------------------------------------- */
-		
 	}
 
 

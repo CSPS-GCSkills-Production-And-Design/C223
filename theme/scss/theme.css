@@ -3520,12 +3520,12 @@ html[lang=fr] #abbr-list dt:after {
 .mod-name {
   font-size: 0.8em; }
 
-/* ACTIVITY ---------------------------- */
+/* ACTIVITY 5.2.2.2. --------------------------------------------------- */
 /* INSTRUCTIONS & ICON ----------------- */
 #activity-instruction {
   padding: 10px;
   display: inline-block;
-  width: 500px; }
+  width: 1000px; }
 
 #activity-instruction-icon {
   display: inline-block;
@@ -3656,3 +3656,4 @@ li input[type="radio"] {
 #q1-direct1 {
   float: right; }
 
+/* ACTIVITY 2.5.2. ------------------------------------------------------- */

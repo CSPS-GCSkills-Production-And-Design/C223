@@ -18,9 +18,7 @@
         instead, here are the most common procurement obligations:</p><p>&nbsp;<span class="ProgNote">Visual infographic - TBD</span>&nbsp;</p><ul>
 
 <div class="container">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
-    
-
+  <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="false">
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
         <div class="item active">
@@ -36,6 +34,13 @@
         <div class="slide-container">
         <div class="carousel-image-area2"><img src="./theme/base/flipcard_icon1.png"></div>
         At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.<br><br>
+        <div id="activity-instruction">
+            <img src="./theme/base/yellow_icon_mouse.ico" alt="An icon portraying a computor mouse" id="activity-instruction-icon">
+            <p id="activity-instruction-text">
+                Select an answer and then "submit" when you are done.
+            </p>
+        </div>
+        <br><br>
         <div class="qs-elearning-activity" id="activity-content-box" data-activity-type="standard">
             <!--this is an exercise-->
             <div class="qs-exercise" id="exercise1"> <!-- data-random-questions="true" -->
@@ -317,6 +322,9 @@
                 <!--end question-->                        
             </div>
         </div>
+        <div class="activity-notice">
+            <p>When in doubt, consult the <a id="link" href="">Aboriginal amd Treaty Rights Information System (ATRIS)</a> to determin if a Modern Treaty (CLCA) applies.</p>
+        </div>
     </div>
         <div class="carousel-caption">
         </div>
@@ -385,26 +393,26 @@
         </div>
       <div class="carousel-controls-ui">
     <!-- Left and right controls -->
-      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
         <img class="carousel-control-prev-icon" aria-hidden="true" src="./theme/base/carousel_icon_prev.ico">
         <span class="sr-only">Previous</span>
       </a>
-      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
         <img class="carousel-control-next-icon" aria-hidden="true" src="./theme/base/carousel_icon_next.ico">
         <span class="sr-only">Next</span>
       </a>
     </div>
     <!-- Indicators -->
     <ol id="indicators-container" class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
-      <li data-target="#myCarousel" data-slide-to="5"></li>
-      <li data-target="#myCarousel" data-slide-to="6"></li>
-      <li data-target="#myCarousel" data-slide-to="7"></li>
-      <li data-target="#myCarousel" data-slide-to="8"></li>
+      <li data-target="#carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel" data-slide-to="1"></li>
+      <li data-target="#carousel" data-slide-to="2"></li>
+      <li data-target="#carousel" data-slide-to="3"></li>
+      <li data-target="#carousel" data-slide-to="4"></li>
+      <li data-target="#carousel" data-slide-to="5"></li>
+      <li data-target="#carousel" data-slide-to="6"></li>
+      <li data-target="#carousel" data-slide-to="7"></li>
+      <li data-target="#carousel" data-slide-to="8"></li>
     </ol>
     </div>
     <div>
@@ -748,192 +756,3 @@
 <script>
     $( document ).on( "wb-ready.wb-tabs", ".wb-tabs", function( event ) {qsObj = new qsBeta('qsObj')});
 </script>
-
-<style>
-
-.carousel-image-area1 {
-    width: 215px;
-    height: 140px;
-    float: right;
-    margin: 0 20px 20px 20px;
-}
-
-.carousel-image-area1 img {
-    width: 215px;
-    height: 140px;
-}
-
-.carousel-image-area2 {
-    width: 190px;
-    height: 160px;
-    float: right;
-    margin: 0 20px 20px 20px;
-}
-
-.carousel-image-area2 img {
-    width: 190px;
-    height: 160px;
-}
-
-.carousel-image-area3 {
-    width: 190px;
-    height: 190px;
-    float: right;
-    margin: 0 20px 20px 20px;
-}
-
-.carousel-image-area3 img {
-    width: 190px;
-    height: 190px;
-}
-
-.carousel-image-area4 {
-    width: 190px;
-    height: 190px;
-    float: right;
-    margin: 0 20px 20px 20px;
-}
-
-.carousel-image-area4 img {
-    width: 190px;
-    height: 190px;
-}
-
-.carousel-image-area5 {
-    width: 130px;
-    height: 190px;
-    float: right;
-    margin: 0 20px 20px 20px;
-}
-
-.carousel-image-area5 img {
-    width: 130px;
-    height: 190px;
-}
-
-.carousel-image-area6 {
-    width: 190px;
-    height: 120px;
-    float: right;
-    margin: 0 20px 20px 20px;
-}
-
-.carousel-image-area6 img {
-    width: 190px;
-    height: 120px;
-}
-
-.carousel-image-area7 {
-    width: 190px;
-    height: 190px;
-    float: right;
-    margin: 0 20px 20px 20px;
-}
-
-.carousel-image-area7 img {
-    width: 190px;
-    height: 190px;
-}
-
-.carousel-image-area8 {
-    width: 190px;
-    height: 130px;
-    float: right;
-    margin: 0 20px 20px 20px;
-}
-
-.carousel-image-area8 img {
-    width: 190px;
-    height: 130px;
-}
-
-.carousel-image-area9 {
-    width: 175px;
-    height: 190px;
-    float: right;
-    margin: 0 20px 20px 20px;
-}
-
-.carousel-image-area9 img {
-    width: 175px;
-    height: 190px;
-}
-
-#carousel-title-area-6 {
-    height: 90px;
-}
-
-.carousel-title-area {
-    background-color: #167F89;
-    text-align: center;
-    height: 50px;
-    width: 100%;
-    font-size: 30px;
-    color: #fff;
-    font-family: 'Aleo-Bold';
-    letter-spacing: 2px;
-    word-spacing: 4px;
-}
-
-.slide-container {
-    padding: 30px;
-    border-radius: 15px 15px 15px 15px;
-}
-
-.qs-exercise {
-    margin: 0 !important;
-}
-.carousel-inner {
-    background-color: #76d0d8;
-    padding-bottom:10px;
-    border: 6px solid #167F89;
-    border-radius: 15px;
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
-}
-
-.carousel-control-next img, .carousel-control-prev img {
-    height: 30px;
-    width: 20px;
-}
-
-.carousel-control-next, .carousel-control-prev {
-    z-index: 2;
-}
-
-.carousel-control-next {
-    float:right;
-    margin-right: 20px;
-    margin-top: 10px;
-}
-
-.carousel-control-prev {
-    float:left;
-    margin-left: 20px;
-    margin-top: 10px;
-}
-
-    .item {
-        border-radius: 15px 15px 0px 0px;
-        background-color: #e0f2f2;
-    }
-
-    .carousel-indicators {
-        bottom:-43px;
-        margin-bottom: 50px;
-    }
-    #indicators-container li {
-        background-color: #136a72;
-        border-width: 3px;
-        border-color: #136a72;
-        height: 20px;
-        width: 20px;
-    }
-        #indicators-container .active {
-        background-color: #f9f9f9;
-        border-color: #136a72;
-        border-width: 3px;
-        height: 22px;
-        width: 22px;
-    }
-</style>
